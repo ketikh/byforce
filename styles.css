@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#5FDBFD, #85EED1, #F4EBA7);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-bottom: 30px;
+}
+
+.hint {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #36c1f5;
+    border: 3px solid #047098;
+    border-radius: 50%;
+    z-index: 10000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+  .panel { display: none; }
+
+  #t1:checked ~ .panels #p1 { display: block; }
+  #t2:checked ~ .panels #p2 { display: block; }
+  #t3:checked ~ .panels #p3 { display: block; }
+  #t4:checked ~ .panels #p4 { display: block; }
+
+  #t1:checked ~ .tabs label[for="t1"],
+  #t2:checked ~ .tabs label[for="t2"],
+  #t3:checked ~ .tabs label[for="t3"],
+  #t4:checked ~ .tabs label[for="t4"] {
+    background: #08aae7;
+  }
+
+  .btn {
+    font-family: "Press Start 2P", system-ui !important;
+    font-weight: 400 !important;
+    font-size: 13px !important;
+    border: 2px solid transparent !important;
+    border-radius: 0px !important;
+    background-color: white !important;
+    color: black !important;
+    width: 100% !important;
+    box-shadow: 3px 3px 0px 0px rgba(219, 233, 248, 1), 3px -3px 0px 0px rgba(165, 209, 255, 1), -3px 6px 0px 0px rgba(99, 151, 206, 1), -1.5px -1.5px 0px 0px rgba(219, 233, 248, 1) !important;
+}
+.home-btn {
+    padding: 1.2rem 2.8rem !important;
+    font-size: 15px !important;
+    border-radius: 12px !important;
+    transition: all 0.3s ease !important;
+    position: relative;
+    overflow: hidden;
+    color: #000000 !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.home-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    /* background: #36c1f5; */
+    transition: left 0.3s ease;
+    z-index: 1;
+}
+
+.home-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(54, 193, 245, 0.4) !important;
+}
+
+.home-btn:hover::before {
+    left: 0;
+}

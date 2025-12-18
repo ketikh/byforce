@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>8-Bit Store UI Taster</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" type="image/png" href="images/favicon.webp" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main flex flex-col items-center pt-[30px]">
+      <div class="hint">?</div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.webp" alt="8-Bit Store Logo" />
+        </a>
+      </div>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="mx-auto w-full">
+            <div class="pt-5 flex flex-col justify-center items-center w-full">
+              <input id="t1" type="radio" name="tabs" class="hidden" checked />
+              <input id="t2" type="radio" name="tabs" class="hidden" />
+              <input id="t3" type="radio" name="tabs" class="hidden" />
+              <input id="t4" type="radio" name="tabs" class="hidden" />
+
+              <div class="tabs flex">
+                <label
+                  for="t1"
+                  class="cursor-pointer px-[9px] py-[9px] text-[12px] leading-[16px] font-press border border-brand-border border-b-0 mx-[1px] text-white bg-brand-primary rounded-t-[7.55px] transition uppercase"
+                >
+                  Home
+                </label>
+
+                <label
+                  for="t2"
+                  class="cursor-pointer px-[9px] py-[9px] text-[12px] leading-[16px] font-press border border-brand-border border-b-0 mx-[1px] text-white bg-brand-primary rounded-t-[7.55px] transition uppercase"
+                >
+                  Shop
+                </label>
+
+                <label
+                  for="t3"
+                  class="cursor-pointer px-[9px] py-[9px] text-[12px] leading-[16px] font-press border border-brand-border border-b-0 mx-[1px] text-white bg-brand-primary rounded-t-[7.55px] transition uppercase"
+                >
+                  Games
+                </label>
+
+                <label
+                  for="t4"
+                  class="cursor-pointer px-[9px] py-[9px] text-[12px] leading-[16px] font-press border border-brand-border border-b-0 mx-[1px] text-white bg-brand-primary rounded-t-[7.55px] transition uppercase"
+                >
+                  About
+                </label>
+              </div>
+
+              <div class="panels w-full">
+                <div
+                  id="p1"
+                  class="panel border border-[#047098] bg-[#10aae645] rounded-[15px] pt-[10px] px-[30px] pb-[30px] w-full"
+                >
+                  <div
+class="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 min-h-[70vh] py-8 scroll-smooth animate-[fadeInUp_0.8s_ease-out]"
+                  >
+                    <div class="flex-1 max-w-[600px] flex flex-col">
+                      <div
+                        class="flex items-center gap-[0.3rem] my-[0.1rem] p-[0.1rem] transition-all duration-300 ease-in-out rounded-none hover:translate-x-[2px] hover:bg-transparent hover:pl-[0.2rem]"
+                      >
+                        <div class="flex-1 text-left">
+                          <h3
+                            class="mt-5 font-press text-[15px] text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out tracking-[0.5px] hover:drop-shadow-[0_4px_8px_rgba(0,0,0,0.4)] hover:-translate-y-[2px] hover:text-[#36c1f5]"
+                          >
+                            Last Call on Iconic All-White AF1s — Half the Price!
+                          </h3>
+                        </div>
+                        <div class="shrink-0 flex items-center justify-center">
+                          <img
+                            src="images/airforce.webp"
+                            alt="Sneakers"
+                            class="relative w-[70px] h-[70px] object-contain border-0 bg-transparent shadow-none rounded-[12px] transition-all duration-300 ease-in-out drop-shadow-[0_4px_8px_rgba(0,0,0,0.15)] hover:scale-[1.05] hover:drop-shadow-[0_6px_12px_rgba(0,0,0,0.2)] hover:scale-[1.05] hover:drop-shadow-[0_6px_12px_rgba(0,0,0,0.2)]
+"
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="flex flex-col gap-[0.1rem] py-[0.2rem] pb-[0.1rem] bg-transparent border-0 rounded-none backdrop-blur-0 shadow-none transition-all duration-300 ease-in-out border-b border-white/20 hover:bg-transparent hover:shadow-none hover:border-b-white/40"
+                      >
+                        <div
+                          class="flex items-center gap-[0.3rem] my-[0.1rem] p-[0.1rem] transition-all duration-300 ease-in-out rounded-none hover:translate-x-[2px] hover:bg-transparent hover:pl-[0.2rem]"
+                        >
+                          <div class="flex-1 text-left">
+                            <h6 class="font-press text-[12px] text-white">
+                              Limited outlet stock. Authentic. 50% off retail.
+                            </h6>
+                          </div>
+                          <div
+                            class="shrink-0 flex items-center justify-center"
+                          >
+                            <img
+                              src="images/IMG_4429.webp"
+                              alt="50% OFF Icon"
+                              class="relative w-[70px] h-[70px] object-contain border-0 bg-transparent shadow-none rounded-[12px] transition-all duration-300 ease-in-out drop-shadow-[0_4px_8px_rgba(0,0,0,0.15)]"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <hr
+                        class="border-0 h-px bg-white/30 my-[0.2rem] opacity-60"
+                      />
+
+                      <div
+                        class="flex flex-col gap-[0.1rem] py-[0.2rem] pb-[0.1rem] bg-transparent border-0 rounded-none backdrop-blur-0 shadow-none transition-all duration-300 ease-in-out border-b border-[rgba(255,193,7,0.3)] hover:bg-transparent hover:shadow-none hover:border-b-white/40"
+                      >
+                        <div
+                          class="flex items-center gap-[0.3rem] my-[0.1rem] p-[0.1rem] transition-all duration-300 ease-in-out rounded-none hover:translate-x-[2px] hover:bg-transparent hover:pl-[0.2rem]"
+                        >
+                          <div class="flex-1 text-left">
+                            <h6 class="font-press text-[10px] text-white">
+                              200+ sneakerheads already copped theirs. Sizes are
+                              going fast.
+                            </h6>
+                          </div>
+                          <div
+                            class="shrink-0 flex items-center justify-center"
+                          >
+                            <img
+                              src="images/bitmap3.webp"
+                              alt="50% OFF Icon"
+                              class="relative w-[70px] h-[70px] object-contain border-0 bg-transparent shadow-none rounded-[12px] transition-all duration-300 ease-in-out drop-shadow-[0_4px_8px_rgba(0,0,0,0.15)] hover:scale-[1.05] hover:drop-shadow-[0_6px_12px_rgba(0,0,0,0.2)]
+"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <hr
+                        class="border-0 h-px bg-white/30 my-[0.2rem] opacity-60"
+                      />
+
+                      <div
+                        class="flex flex-col gap-[0.1rem] py-[0.2rem] pb-[0.1rem] bg-transparent border-0 rounded-none backdrop-blur-0 shadow-none transition-all duration-300 ease-in-out border-b border-white/20 hover:bg-transparent hover:shadow-none hover:border-b-white/40"
+                      >
+                        <div
+                          class="flex items-center gap-[0.3rem] my-[0.1rem] p-[0.1rem] transition-all duration-300 ease-in-out rounded-none hover:translate-x-[2px] hover:bg-transparent hover:pl-[0.2rem]"
+                        >
+                          <div class="flex-1 text-left">
+                            <h6 class="font-press text-[10px] text-white mb-4">
+                              Trusted by over 200 customers so far.
+                            </h6>
+                            <h6 class="font-press text-[10px] text-white">
+                              Order yours today to join us on our journey
+                              reshaping value for money through quality, style
+                              and price.
+                            </h6>
+                          </div>
+                          <div
+                            class="shrink-0 flex items-center justify-center"
+                          >
+                            <img
+                              src="images/IMG_4426.webp"
+                              alt="50% OFF Icon"
+                              class="relative w-[70px] h-[70px] object-contain border-0 bg-transparent shadow-none rounded-[12px] transition-all duration-300 ease-in-out drop-shadow-[0_4px_8px_rgba(0,0,0,0.15)] hover:scale-[1.05] hover:drop-shadow-[0_6px_12px_rgba(0,0,0,0.2)]
+"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <hr
+                        class="border-0 h-px bg-white/30 my-[0.2rem] opacity-60"
+                      />
+                      <div
+                        class="flex flex-col gap-[0.1rem] py-[0.2rem] pb-[0.1rem] bg-transparent border-0 rounded-none backdrop-blur-0 shadow-none transition-all duration-300 ease-in-out border-b border-[rgba(54,193,245,0.3)] hover:bg-transparent hover:shadow-none hover:border-b-white/40"
+                      >
+                        <div
+                          class="flex items-center gap-[0.3rem] my-[0.1rem] p-[0.1rem] transition-all duration-300 ease-in-out rounded-none hover:translate-x-[2px] hover:bg-transparent hover:pl-[0.2rem]"
+                        >
+                          <div class="flex-1 text-left">
+                            <h6 class="font-press text-[10px] text-white">
+                              Premium comfort, classic style, built to last.
+                              Your perfect everyday sneaker.
+                            </h6>
+                          </div>
+                          <div
+                            class="shrink-0 flex items-center justify-center"
+                          >
+                            <img
+                              src="images/IMG_4427.webp"
+                              alt="50% OFF Icon"
+                              class="relative w-[70px] h-[70px] object-contain border-0 bg-transparent shadow-none rounded-[12px] transition-all duration-300 ease-in-out drop-shadow-[0_4px_8px_rgba(0,0,0,0.15)] hover:scale-[1.05] hover:drop-shadow-[0_6px_12px_rgba(0,0,0,0.2)]
+"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <hr
+                        class="border-0 h-px bg-white/30 my-[0.2rem] opacity-60"
+                      />
+                      <div
+                        class="flex flex-col gap-[0.1rem] py-[0.2rem] pb-[0.1rem] bg-transparent border-0 rounded-none backdrop-blur-0 shadow-none transition-all duration-300 ease-in-out border-b border-white/20 hover:bg-transparent hover:shadow-none hover:border-b-white/40"
+                      >
+                        <div
+                          class="flex items-center gap-[0.3rem] my-[0.1rem] p-[0.1rem] transition-all duration-300 ease-in-out rounded-none hover:translate-x-[2px] hover:bg-transparent hover:pl-[0.2rem]"
+                        >
+                          <div class="flex-1 text-left">
+                            <h6 class="font-press text-[10px] text-white">
+                              Free UK delivery within 3-5 days. International
+                              shipping available.
+                            </h6>
+                          </div>
+                          <div
+                            class="shrink-0 flex items-center justify-center"
+                          >
+                            <img
+                              src="images/image1382.webp"
+                              alt="50% OFF Icon"
+                              class="relative w-[70px] h-[70px] object-contain border-0 bg-transparent shadow-none rounded-[12px] transition-all duration-300 ease-in-out drop-shadow-[0_4px_8px_rgba(0,0,0,0.15)] hover:scale-[1.05] hover:drop-shadow-[0_6px_12px_rgba(0,0,0,0.2)]
+"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <hr
+                        class="border-0 h-px bg-white/30 my-[0.2rem] opacity-60"
+                      />
+                      <div
+                        class="flex flex-col gap-[0.1rem] py-[0.2rem] pb-[0.1rem] bg-transparent border-0 rounded-none backdrop-blur-0 shadow-none transition-all duration-300 ease-in-out hover:bg-transparent hover:shadow-none hover:border-b-white/40"
+                      >
+                        <div
+                          class="flex items-center gap-[0.3rem] my-[0.1rem] p-[0.1rem] transition-all duration-300 ease-in-out rounded-none hover:translate-x-[2px] hover:bg-transparent hover:pl-[0.2rem]"
+                        >
+                          <div class="flex-1 text-left">
+                            <h6 class="font-press text-[10px] text-white">
+                              Limited stock available. Don't miss out on these
+                              incredible prices!
+                            </h6>
+                          </div>
+                          <div
+                            class="shrink-0 flex items-center justify-center"
+                          >
+                            <img
+                              src="images/bitmap_g1120.webp"
+                              alt="50% OFF Icon"
+                              class="relative w-[70px] h-[70px] object-contain border-0 bg-transparent shadow-none rounded-[12px] transition-all duration-300 ease-in-out drop-shadow-[0_4px_8px_rgba(0,0,0,0.15)] hover:scale-[1.05] hover:drop-shadow-[0_6px_12px_rgba(0,0,0,0.2)]
+"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mt-[0.1rem]">
+                        <button class="btn home-btn" type="button">
+                          Shop &amp; Save Now
+                        </button>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="max-w-[500px] max-[1200px]:max-w-[400px] max-w-full max-[480px]:max-w-[220px]
+">
+                        <div
+                          class="relative p-8 bg-white/5 rounded-[20px] border border-white/10 backdrop-blur-[10px] transition-all duration-300 ease-in-out hover:-translate-y-[5px] hover:shadow-[0_15px_40px_rgba(0,0,0,0.2)] hover:border-[rgba(54,193,245,0.3)]"
+                        >
+                          <div
+                            class="absolute inset-0 bg-[linear-gradient(45deg,rgba(54,193,245,0.1),rgba(8,170,231,0.1))] rounded-[20px] opacity-0 transition-opacity duration-300 ease-in-out"
+                          ></div>
+                          <img src="images/bitmap_g1120.webp" alt="Sneakers" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  id="p2"
+                  class="panel border border-[#047098] bg-[#10aae645] rounded-[15px] pt-[10px] px-[30px] pb-[30px] w-full"
+                >
+                  <h3 class="text-xl font-bold mb-2">test</h3>
+                  <p class="text-white/80">
+                    test
+                  </p>
+                </div>
+
+                <div
+                  id="p3"
+                  class="panel border border-[#047098] bg-[#10aae645] rounded-[15px] pt-[10px] px-[30px] pb-[30px] w-full"
+                >
+                  <h3 class="text-xl font-bold mb-2">test</h3>
+                  <p class="text-white/80">test</p>
+                </div>
+
+                <div
+                  id="p4"
+                  class="panel border border-[#047098] bg-[#10aae645] rounded-[15px] pt-[10px] px-[30px] pb-[30px] w-full"
+                >
+                  <h3 class="text-xl font-bold mb-2">test</h3>
+                  <p class="text-white/80">test</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer
+          class="border-0 border-[#047098] mt-[50px] bg-[#36c1f5] rounded-[10px] w-full !p-[10px] flex flex-col"
+        >
+          <div class="flex flex-row justify-around items-center">
+            <div class="">
+              <div class="heading_class">
+                <p class="font-press text-white text-[12px] mt-[2px] mb-3 
+">BYFORCE</p>
+              </div>
+            </div>
+            <div class="">
+              <div class="heading_class">
+                <p class="font-press text-white text-[12px] mt-[2px] mb-3
+">info@byforce.uk</p>
+              </div>
+            </div>
+            <div class="">
+              <div class="heading_class">
+                <p class="font-press text-white text-[12px] mt-[2px] mb-3
+">+44 7500 324 868</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: "1rem",
+            screens: {
+              sm: "540px",
+              md: "720px",
+              lg: "960px",
+              xl: "1140px",
+              "2xl": "1320px",
+            },
+          },
+          extend: {
+            colors: {
+              brand: {
+                active: "#08aae7",
+                primary: "#36c1f5",
+                border: "#047098",
+              },
+            },
+            fontFamily: {
+              press: ['"Press Start 2P"', "system-ui"],
+            },
+            keyframes: {
+              fadeInUp: {
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+            },
+            animation: {
+              fadeInUp: "fadeInUp 0.8s ease-out",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
